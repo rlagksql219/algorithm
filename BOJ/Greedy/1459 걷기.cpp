@@ -22,7 +22,7 @@ int main() {
 		}
 	}
 
-	while (cx != x) {
+ 	while (cx != x) {
 		cx += 1;
 		ans += w;
 	}
