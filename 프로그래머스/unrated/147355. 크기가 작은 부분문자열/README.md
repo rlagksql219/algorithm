@@ -1,5 +1,6 @@
 # [unrated] 크기가 작은 부분문자열 - 147355 
 
+✨int 범위때문에 long long으로 풀어야하고, 문자열->숫자 변환도 `stoll`을 사용해야 함
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/147355) 
 
 ### 성능 요약
