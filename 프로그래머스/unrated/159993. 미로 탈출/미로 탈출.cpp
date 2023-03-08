@@ -91,12 +91,7 @@ int solution(vector<string> maps) {
     else {
         answer = dist1 + dist2;
     }
-    /*for(int i=0; i<N; i++) {
-        for(int j=0; j<M; j++) {
-            cout << cnt[i][j];
-        }
-        cout << endl;
-    }*/
+    
     
     return answer;
 }
