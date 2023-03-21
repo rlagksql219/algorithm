@@ -1,5 +1,7 @@
 # [Gold V] 두 용액 - 2470 
 
+✨ [Blog](https://velog.io/@rlagksql219/BOJC-2470-%EB%91%90-%EC%9A%A9%EC%95%A1-Two-Pointer)
+
 [문제 링크](https://www.acmicpc.net/problem/2470) 
 
 ### 성능 요약
