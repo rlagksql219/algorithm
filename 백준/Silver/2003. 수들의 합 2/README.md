@@ -1,5 +1,7 @@
 # [Silver IV] 수들의 합 2 - 2003 
 
+✨ [Blog](https://velog.io/@rlagksql219/BOJC-2003-%EC%88%98%EB%93%A4%EC%9D%98-%ED%95%A9-2-Two-Pointer)
+
 [문제 링크](https://www.acmicpc.net/problem/2003) 
 
 ### 성능 요약
