@@ -24,8 +24,7 @@ long long solution(vector<int> sequence) {
     
     /* DP */
     dp1[0] = list1[0];
-    ans = list1[0];
-    if (ans < dp1[0])   ans = dp1[0];
+    ans = dp1[0]; //list[0]으로 값 넣어주면 N=1일 때, for문 안돌아서 dp값 접근 못함
     
     for(int i=1; i<N; i++) {
         dp1[i] = max(dp1[i-1] + list1[i], list1[i]);
