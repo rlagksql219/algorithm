@@ -2,6 +2,12 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/160586) 
 
+> 알고리즘 자체는 단순. for문이 많아서 코드 짤 때 주의하기
+>
+> answer vector에서 size만큼 0으로 초기화해주고, 최솟값 더해주기
+>
+> num = min(num, k) 이런식으로 값 갱신해가며 최솟값 찾기
+
 ### 성능 요약
 
 메모리: 4.2 MB, 시간: 2.23 ms
