@@ -1,5 +1,7 @@
 # [unrated] 시소 짝꿍 - 152996 
 
+✨ [Blog](https://velog.io/@rlagksql219/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4C-%EC%8B%9C%EC%86%8C-%EC%A7%9D%EA%BF%8D)
+
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/152996) 
 
 ### 성능 요약
