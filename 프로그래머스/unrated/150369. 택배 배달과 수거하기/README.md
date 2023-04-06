@@ -1,5 +1,7 @@
 # [unrated] 택배 배달과 수거하기 - 150369 
 
+✨ [Blog](https://velog.io/@rlagksql219/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4C-%ED%83%9D%EB%B0%B0-%EB%B0%B0%EB%8B%AC%EA%B3%BC-%EC%88%98%EA%B1%B0%ED%95%98%EA%B8%B0-Greedy)
+
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150369) 
 
 ### 성능 요약
