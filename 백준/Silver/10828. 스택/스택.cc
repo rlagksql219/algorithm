@@ -22,7 +22,7 @@ int main() {
 		if (cmd == "pop") {
 			if (s.size() == 0) {
 				result = -1;
-				cout << result << '\n';
+				cout << -1 << '\n';
 			}
 			else {
 				result = s.top();
