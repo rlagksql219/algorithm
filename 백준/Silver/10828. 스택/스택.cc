@@ -21,12 +21,10 @@ int main() {
 
 		if (cmd == "pop") {
 			if (s.size() == 0) {
-				result = -1;
 				cout << -1 << '\n';
 			}
 			else {
-				result = s.top();
-				cout << result << '\n';
+				cout << s.top() << '\n';
 				s.pop();
 			}
 		}
@@ -35,12 +33,10 @@ int main() {
 		}
 		else if (cmd == "empty") {
 			if (s.size() == 0) {
-				result = 1;
-				cout << result << '\n';
+				cout << 1 << '\n';
 			}
 			else {
-				result = 0;
-				cout << result << '\n';
+				cout << 0 << '\n';
 			}
 		}
 		else if (cmd == "top") {
