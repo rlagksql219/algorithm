@@ -1,5 +1,7 @@
 # [unrated] 귤 고르기 - 138476 
 
+> 처음에 배열 이용해서 해당 index에 값++ 하는 방식으로 풀었는데 공간복잡도가 너무 구린지 시간 초과 나서 `map 이용`하는 방식으로 바꿨다 !
+
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/138476) 
 
 ### 성능 요약
