@@ -2,6 +2,8 @@
 
 [문제 링크](https://www.acmicpc.net/problem/3055) 
 
+✨ [Blog](https://velog.io/@rlagksql219/BOJC-3055-%ED%83%88%EC%B6%9C-BFS)
+
 ### 성능 요약
 
 메모리: 2048 KB, 시간: 0 ms
