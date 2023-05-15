@@ -2,6 +2,8 @@
 
 [문제 링크](https://www.acmicpc.net/problem/14501) 
 
+✨ [Blog](https://velog.io/@rlagksql219/BOJC-14501-%ED%87%B4%EC%82%AC-DP)
+
 ### 성능 요약
 
 메모리: 2020 KB, 시간: 0 ms
