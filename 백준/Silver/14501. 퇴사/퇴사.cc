@@ -21,7 +21,7 @@ int main() {
 			dp[i] = max(dp[i + 1], p[i] + dp[i + t[i]]);
 	}
 
-	cout << dp[1] << '\n';
+	cout << dp[1];
 
 	return 0;
 }
