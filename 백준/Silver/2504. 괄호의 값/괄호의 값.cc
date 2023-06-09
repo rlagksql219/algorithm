@@ -30,7 +30,7 @@ int main() {
 			s.pop();
 			num /= 2;
 		}
-		else {
+		else { //str[i]==']'
 			if (s.empty() || s.top() != '[') {
 				cout << 0;
 				return 0;
