@@ -1,5 +1,7 @@
 # [Silver I] 괄호의 값 - 2504 
 
+✨ [Blog](https://velog.io/@rlagksql219/BOJC-2504-%EA%B4%84%ED%98%B8%EC%9D%98-%EA%B0%92)
+
 [문제 링크](https://www.acmicpc.net/problem/2504) 
 
 ### 성능 요약
