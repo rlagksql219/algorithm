@@ -20,6 +20,7 @@ int main() {
 
 	for (int i = 0; i < N; i++) {
 		dp[i] = v[i];
+		
 		for (int j = 0; j < i; j++) {
 			if (v[i] > v[j]) {
 				if (dp[i] < dp[j] + v[i])
