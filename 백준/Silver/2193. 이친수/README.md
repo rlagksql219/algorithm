@@ -1,5 +1,7 @@
 # [Silver III] 이친수 - 2193 
 
+🌟int 범위
+
 [문제 링크](https://www.acmicpc.net/problem/2193) 
 
 ### 성능 요약
