@@ -1,5 +1,7 @@
 # [Silver V] 나이순 정렬 - 10814 
 
+📗 stable_sort()
+
 [문제 링크](https://www.acmicpc.net/problem/10814) 
 
 ### 성능 요약
