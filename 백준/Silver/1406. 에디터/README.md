@@ -1,5 +1,7 @@
 # [Silver II] 에디터 - 1406 
 
+⭐insert, erase가 빈번하게 일어나므로 vector 대신 `list`를 사용해야 되는 문제
+
 [문제 링크](https://www.acmicpc.net/problem/1406) 
 
 ### 성능 요약
