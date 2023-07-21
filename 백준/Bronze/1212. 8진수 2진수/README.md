@@ -1,5 +1,7 @@
 # [Bronze II] 8진수 2진수 - 1212 
 
+⚠️0 예외처리
+
 [문제 링크](https://www.acmicpc.net/problem/1212) 
 
 ### 성능 요약
