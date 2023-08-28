@@ -6,8 +6,8 @@ using namespace std;
 long long func(int n, int x) {
 	long long num = 0;
 
-	for (long long i = x; n / i >= 1; i *= x) {
-		num += n / i;
+	for (long long i = x; i <= n; i *= x) {
+		num += (n / i);
 	}
 
 	return num;
