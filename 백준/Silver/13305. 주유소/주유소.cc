@@ -13,7 +13,7 @@ int main() {
 	vector<long long> dist(N-1);
 	vector<long long> price(N);
 	vector<long long> min_price(N);
-	int ans = 0;
+	long long ans = 0;
 
 	for (int i = 0; i < N - 1; i++) {
 		cin >> dist[i];
