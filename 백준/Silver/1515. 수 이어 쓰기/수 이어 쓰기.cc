@@ -13,7 +13,7 @@ int main() {
 	int ptr = 0;
 	string str;
 	cin >> str;
-	while (num++ < 30000) {
+	while (num++ < 100000) {
 		string s = to_string(num);
 		for (int i = 0; i < s.length(); i++) {
 			if (str[ptr] == s[i])	ptr++;
