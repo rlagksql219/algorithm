@@ -24,6 +24,7 @@ int main() {
 		if (s[i] == '1') {
 			s.erase(s.begin() + i);
 			one_cnt--;
+			i--;
 		}
 	}
 	for (int i = s.length()-1; i >= 0; i--) {
@@ -31,6 +32,7 @@ int main() {
 		if (s[i] == '0') {
 			s.erase(s.begin() + i);
 			zero_cnt--;
+			i++;
 		}
 	}
 
