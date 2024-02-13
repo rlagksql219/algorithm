@@ -38,7 +38,7 @@ int main() {
 		}
 		sort(v.begin(), v.end());
 		for (int i = 0; i < n; i++) {
-			if (v[i].second.second.second == t) printf("%d\n", n - i);
+			if (v[i].second.second.second == t) cout << n-i << '\n';
 		}
 	}
 
