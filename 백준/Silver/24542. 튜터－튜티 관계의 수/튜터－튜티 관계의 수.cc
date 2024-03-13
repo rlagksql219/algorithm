@@ -1,48 +1,44 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
 using namespace std;
 
-#define FASTIO cin.tie(0); cout.tie(0); ios_base::sync_with_stdio(0);
-#define FOR(i,a,b) for(int i=(a);i<=(b);i++)
-#define ROF(i,a,b) for(int i=(a);i>=(b);i--)
-#define ll long long int
-#define pii pair<int, int>
-#define PQ priority_queue
-#define LEN(v) int(v.size())
-#define ALL(v) v.begin(),v.end()
-#define INF 2e9
-#define LINF 1e18
-#define MAX 200001
-#define MOD 1000000007
+vector<int> v[200001];
+bool visited[200001];
 
-vector<bool> visited(MAX, 0);
-vector<vector<int>> Edge(MAX, vector<int>());
-
-ll DFS(int node) {
-	ll cnt = 1;
-	for (int next : Edge[node]) {
+long long dfs(int node) {
+	long long cnt = 1;
+	for (int i = 0; i < v[node].size(); i++) {
+		int next = v[node][i];
 		if (visited[next]) continue;
 		visited[next] = 1;
-		cnt += DFS(next);
+		cnt += dfs(next);
 	}
+
 	return cnt;
 }
 
 int main() {
-	FASTIO;
-	int N, M;
-	cin >> N >> M;
-	FOR(m, 1, M) {
-		int u, v;
-		cin >> u >> v;
-		Edge[u].push_back(v);
-		Edge[v].push_back(u);
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
+	int n, m;
+	long long ans = 1;
+	cin >> n >> m;
+	for (int i = 0; i < m; i++) {
+		int a, b;
+		cin >> a >> b;
+		v[a].push_back(b);
+		v[b].push_back(a);
 	}
-	ll ans = 1;
-	FOR(i, 1, N) {
-		if (visited[i]) continue;
-		visited[i] = 1;
-		ans = (ans * DFS(i)) % MOD;
+
+	for (int i = 1; i <= n; i++) {
+		if (visited[i])	continue;
+		visited[i] = true;
+		ans = (ans * dfs(i)) % 1000000007;
 	}
+
 	cout << ans;
 
 	return 0;
