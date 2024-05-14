@@ -5,7 +5,6 @@ using namespace std;
 
 int N;
 int arr[130][130];
-bool visited[130][130];
 int cnt[130][130];
 
 int dx[4] = {0, 0, 1, -1};
@@ -13,7 +12,6 @@ int dy[4] = {1, -1, 0, 0};
 
 
 void bfs(int x, int y) {
-	visited[x][y] = true;
 	cnt[x][y] = arr[x][y];
 
 	queue <pair<int, int>> q;
@@ -32,7 +30,6 @@ void bfs(int x, int y) {
 			if (nx >= 0 && nx < N && ny >= 0 && ny < N) {
 				if (cnt[nx][ny] > cnt[xx][yy] + arr[nx][ny]) {
 					cnt[nx][ny] = cnt[xx][yy] + arr[nx][ny];
-					visited[nx][ny] = true;
 					q.push({ nx, ny });
 				}
 			}
@@ -71,7 +68,6 @@ int main() {
 		for (int i = 0; i < 130; i++) {
 			for (int j = 0; j < 130; j++) {
 				arr[i][j] = 0;
-				visited[i][j] = false;
 				cnt[i][j] = 987654321;
 			}
 		}
