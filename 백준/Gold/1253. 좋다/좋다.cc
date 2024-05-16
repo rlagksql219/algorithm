@@ -4,6 +4,8 @@
 
 using namespace std;
 
+int arr[2001];
+
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
@@ -11,35 +13,27 @@ int main() {
 
 	int N;
 	int ans = 0;
-	vector<int> v;
 	cin >> N;
 	for (int i = 0; i < N; i++) {
-		int tmp;
-		cin >> tmp;
-		v.push_back(tmp);
+		cin >> arr[i];
 	}
 
-	for (int i = 0; i < v.size(); i++) {
-		int target = v[i];
-		for (int j = 0; j < v.size(); j++) {
-			if (i == j)	continue;
-
-			if (find(v.begin(), v.end(), target - v[j]) != v.end()) {
-				int index = find(v.begin(), v.end(), target - v[j]) - v.begin();
-				if (index != i && index != j) {
+	sort(arr, arr + N);
+	for (int i = 0; i < N; i++) {
+		int target = arr[i];
+		int left = 0, right = N - 1, sum;
+		while (left < right) {
+			sum = arr[left] + arr[right];
+			if (target == sum) {
+				if (left != i && right != i) {
 					ans++;
 					break;
 				}
-
-				if (find(v.begin() + index + 1, v.end(), target - v[j]) != v.end()) {
-					int index2 = find(v.begin() + index + 1, v.end(), target - v[j]) - v.begin();
-					if (index2 != i && index2 != j) {
-						ans++;
-						break;
-					}
-				}
-
+				else if (left == i)	left++;
+				else if (right == i)	right--;
 			}
+			else if (sum > target)	right--;
+			else left++;
 		}
 	}
 
