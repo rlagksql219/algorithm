@@ -10,12 +10,12 @@ int dist[1001];
 bool visited[1001];
 
 void dijkstra(int node) {
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+	priority_queue<pair<int, int>, vector<pair<int, int>>> pq;
 	pq.push({ 0, node });
 	dist[node] = 0;
 
 	while (!pq.empty()) {
-		int cost = pq.top().first;
+		int cost = -pq.top().first;
 		int cur = pq.top().second;
 
 		pq.pop();
@@ -28,7 +28,7 @@ void dijkstra(int node) {
 			int new_cost = v[cur][i].second + cost;
 			if (dist[next] > new_cost) {
 				dist[next] = new_cost;
-				pq.push({ dist[next], next });
+				pq.push({ -dist[next], next });
 			}
 		}
 	}
